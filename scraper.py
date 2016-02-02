@@ -16,4 +16,4 @@ imported_datas = requests.get(morph_api_url, params={
 })
 
 for imported_data in imported_datas:
-  print imported_data['url']
+  print imported_data[0]
