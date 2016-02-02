@@ -10,10 +10,10 @@ morph_api_url = "https://api.morph.io/techwhiz/infibooks-list/data.json"
 # Keep this key secret!
 morph_api_key = "asPO65qEmH9YJO5XepKc"
 
-urls = requests.get(morph_api_url, params={
+imported_datas = requests.get(morph_api_url, params={
   'key': morph_api_key,
   'query': "select * from 'data' limit 100"
 })
 
-for url in urls:
-  print url
+for imported_data in imported_datas:
+  print imported_data.url
