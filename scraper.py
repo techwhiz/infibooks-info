@@ -12,8 +12,8 @@ morph_api_key = "asPO65qEmH9YJO5XepKc"
 
 imported_datas = requests.get(morph_api_url, params={
   'key': morph_api_key,
-  'query': "select * from 'data' limit 100"
+  'query': "select url from 'data' limit 100"
 })
 
 for imported_data in imported_datas:
-  print imported_data[0]
+  print imported_data
